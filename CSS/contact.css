@@ -1,0 +1,52 @@
+.section--contact{
+    height: 88vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-width: 375px;
+}
+.contact-container{
+    width: 40rem;
+    overflow: auto;
+    margin-bottom: 10vh;
+}
+.contact{
+    margin: 2rem;
+}
+.contact-head{
+    border-bottom: 1px solid rgb(167, 167, 167);
+}
+#contact-title{
+    font-size: 2.125rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+}
+.contact-info{
+    border-bottom: 1px solid rgb(167, 167, 167);
+}
+.contact-info_text{
+    /* border: 1px solid; */
+    font-size: 1.25rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    color:rgb(95, 95, 95);
+    width: 100%;
+    margin-left: -0;
+}
+.fa-content{
+    margin-bottom: 1.5rem;
+    width: 210px;
+    height: 4vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.fa-content a{
+    display: flex;  
+}
+@media screen and (max-height: 500px) {
+    .section--contact{
+        height: 80vh;
+    }
+}

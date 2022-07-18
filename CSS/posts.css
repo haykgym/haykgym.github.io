@@ -1,0 +1,71 @@
+.record-container{
+    margin-top: 20px;
+    width: 90%;
+    display: flex;
+}
+
+.post-record{
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.5;
+    align-self: center;
+}
+
+.fa-long-arrow-left{
+    margin: 0 20px 20px 0;
+}
+
+.article-container{
+    width: 90%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.5;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.article-context{
+    text-align: left;
+}
+
+.soon-container{
+    margin-top: 20px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 1.8;
+}
+
+@media screen and (max-width: 1200px) {
+    .post-record{
+        line-height:normal;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .record-container{
+        display: block;
+     }
+     .iframe-container{
+         position: relative;
+         width: 94%;
+         padding-bottom: 60%;
+         height: 0;
+     }
+     
+     .iframe{
+         position: absolute;
+         top: 0;
+         left: 0;
+         padding: 1rem;
+         width: 100%;
+         height: 100%;
+     }
+     .iframe2{
+        position: absolute;
+         top: 110%;
+         left: 0;
+         padding: 1rem;
+         width: 100%;
+         height: 100%;
+     }
+}

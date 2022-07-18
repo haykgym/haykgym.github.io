@@ -1,0 +1,351 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+@media screen and (min-width: 430px){
+  .menu{
+    margin-top: 2rem;
+    margin-left: 2rem;
+  }
+  .menu--icons{
+    margin-top: 2rem;
+    margin-right: 2rem;
+  }
+}
+
+body {
+  background-color: rgb(248, 245, 245);
+}
+
+/* .body--overflow{
+  overflow: hidden;
+} */
+
+/*once menu bar is active*/
+.body--hidden{
+  overflow: hidden;
+  background-color: rgb(132, 132, 132);
+  transition: 0.5s;
+}
+
+header {
+  /* border: 1px solid; */
+  min-width: 375px;
+  height: 7vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 2rem;
+  user-select: none;
+  z-index: 10;
+}
+.menu {
+  /* border: 1px solid; */
+  margin-top: 1rem;
+  margin-left: 1rem;
+  width: 12rem;
+  height: 80%;
+  padding-right: 0px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  z-index: 10;
+}
+.menu--icons {
+  /* border: 1px solid; */
+  margin-top: 1rem;
+  margin-left: 1rem;
+  cursor: pointer;
+  width: 12rem;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.welcome{
+  cursor: pointer;
+}
+.welcome:hover{
+  opacity: 0.5;
+}
+.fa {
+  cursor: pointer;
+  text-decoration: none;
+  color: rgb(96, 96, 96);
+}
+.fa:hover{
+  opacity: 0.5;
+}
+.fa-adjust {
+  border-left: 1px solid gray;
+  padding-left: 1rem;
+}
+.more-icons {
+  border-radius: 3%;
+  background-color: white;
+  z-index: 1;
+  width: 8rem;
+  height: 9rem;
+  position: absolute;
+  right:  1rem;
+  top: 3.5rem;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 1px 0px 5px rgb(14, 14, 14);
+}
+.hidden {
+  display: none;
+}
+.more-icons--content {
+  color: rgb(85, 85, 85);
+  margin: 0.8rem auto;
+  width: 90%;
+  padding: 0.1%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: space-evenly;
+}
+.more-icons--content span {
+  font-size: 17px;
+}
+.nav-menu {
+  min-height: 660px;
+  min-width: 250px;
+  box-shadow: 1px 0px 25px rgb(89, 89, 89);
+  position: absolute;
+  top: 0px;
+  width: 16%;
+  height: 100%;
+  background-color: rgb(132, 132, 132);
+  opacity: 0.9;
+  z-index: 10;
+  transform: translateX(-17.5rem);
+  transition-duration: 0.3s;
+}
+.nav-menu--content {
+  margin: 3rem 1rem 0 0;
+  height: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.nav-menu--icon {
+  width: 91%;
+  height: 10%;
+  cursor: pointer;
+  padding-left: 15%;
+  display: flex;
+  align-items: center;
+}
+.nav-menu--icon:hover{
+  background-color: rgb(70, 70, 70);
+}
+.nav-menu--tittle {
+  text-decoration: none;
+  color: black;
+  padding-left: 25%;
+}
+
+.section {
+  height: 88vh;
+  min-width: 375px;
+  overflow: auto;
+}
+
+footer{
+  padding-top: 5px;
+  width: 97%;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.54);
+  min-width: 375px;
+}
+
+
+@media screen and (max-width: 430px){
+  .welcome{
+    display: none;
+  }
+  header{
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .menu {
+    margin-left: 0;
+    width: 6rem;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+
+@media screen and (max-width: 980px) {
+  .slider--img_container{
+    margin: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .slider{
+    color:#d50000;
+    transform:scale(2,5);
+    cursor: pointer;
+    font-size: smaller;
+  }
+  .slider:hover{
+    color:#b40101;
+    transform:scale(2,7);
+    transition: 0.2s;
+  }
+  .slider-left{
+    margin-left: 1.5vw;
+  }
+  .slider-right{
+    margin-right: 1.5vw;
+  }
+  .img--container {
+    width: 70%;
+    height: 100%;
+    margin: 1rem auto;
+    display: flex;
+    overflow: hidden;
+  }
+  .img--profile {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 1s;
+  } 
+  .img--active{
+    opacity: 1;
+  }
+   .info {
+    margin: 1rem;
+  }
+  .about-me {
+    color: rgb(85, 85, 85);
+    font-size: 1.4rem;
+    line-height: 1.3;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  .about-me--title {
+    width: fit-content;
+    color: black;
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 1.167;
+  }
+  .about-me--tittlee{
+    color: white;
+  }
+}
+
+@media screen and (min-width: 980px) {
+  .section{
+    min-height: 660px;
+    display: flex;
+  }
+  .slider--img_container{
+    /* border: 1px solid; */
+    width: 60vw;
+    height: 85vh;
+    margin: 1rem;
+    margin-left: 4vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 600px;
+  }
+  .slider{
+    color:#d50000;
+    transform:scale(3,6);
+    cursor: pointer;
+    font-size: smaller;
+  }
+  .slider:hover{
+    color:#b40101;
+    transform:scale(3,8);
+    transition: 0.2s;
+  }
+  .slider-left{
+    z-index: 1;
+    margin-right:1vw;
+  }
+  .slider-right{
+    z-index: 1;
+    margin-left: 1vw;
+  }
+  .img--container {
+    /* border: 1px solid; */
+    width: 29rem;
+    height: 100%;
+    display: flex;
+    overflow: hidden;
+  }
+  .img--profile {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 1s;
+  }
+  .img--active{
+    opacity: 1;
+  }
+  .info {
+    width: 60vw;
+    height: 85vh;
+    margin: 1rem;
+    margin-right: 8vw;
+    min-height: 600px;
+  }
+  .about-me {
+    color: rgb(85, 85, 85);
+    font-size: 1.4rem;
+    line-height: 1.3;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .about-me--title {
+    /* border: 1px solid; */
+    width: max-content;
+    color: black;
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 1.167;
+  }
+  .about-me--tittlee{
+    color: white;
+  }
+  .about-me--text {
+    height: 84%;
+    overflow: auto;
+  }
+}
+/* Customize website's scrollbar like Mac OS
+Not supports in Firefox and IE */
+
+/* total width */
+/* .about-me--text::-webkit-scrollbar {
+  width: 15px;
+  transition: 1s;
+  display: none;
+}
+
+.about-me--text:hover::-webkit-scrollbar{
+  display: block;
+} */
+
+/* scrollbar itself */
+/* .about-me--text::-webkit-scrollbar-thumb {
+  background-color: #babac0;
+  border-radius: 16px;
+  border: 4px solid #fff;
+}
+ */
+
+ @media screen and (max-height: 500px) {
+  .section{
+      height: 80vh;
+  }
+  header{
+    height: max-content;
+  }
+}
